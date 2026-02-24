@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": "Shai Tamam | Medical Information & Research Consultant",
+    "description": "Medical information consulting, systematic reviews, knowledge management, and AI integration for research — over 10 years of experience"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "experience": "Experience",
+    "publications": "Publications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Shai Tamam",
+    "title": "Medical Information & Research Consultant",
+    "tagline": "Helping researchers, graduate students, and organizations navigate the world of medical information — from systematic reviews to AI-powered research workflows",
+    "cta": "Let's Talk"
+  },
+  "about": {
+    "heading": "About",
+    "paragraph1": "Senior Information Specialist with over 10 years of experience in academic libraries and the HealthTech industry. Skilled in literature reviews, knowledge management, and training development, with a clinical background as a licensed paramedic.",
+    "paragraph2": "Throughout my career, I've collaborated with clinical research teams, developed AI-powered systems for literature screening and signal detection, and built knowledge repositories integrating regulatory and scientific databases.",
+    "stat1Label": "Years Experience",
+    "stat1Value": "10+",
+    "stat2Label": "Publications",
+    "stat2Value": "4",
+    "stat3Label": "Institutions",
+    "stat3Value": "5+"
+  },
+  "services": {
+    "heading": "Services",
+    "subtitle": "Professional consulting and support for researchers, students, and organizations",
+    "systematicReviews": {
+      "title": "Systematic & Literature Reviews",
+      "description": "Comprehensive evidence synthesis, systematic search strategies, PRISMA-compliant reviews, and scoping reviews."
+    },
+    "knowledgeManagement": {
+      "title": "Knowledge Management",
+      "description": "Building knowledge repositories, database consolidation, information architecture, and work with regulatory databases (FDA, FAERS, WHO VigiAccess)."
+    },
+    "learningDevelopment": {
+      "title": "Learning & Instructional Design",
+      "description": "LMS administration (Moodle), e-learning course development (Articulate Storyline), training programs, and workshops."
+    },
+    "medicalAI": {
+      "title": "Medical Information & AI",
+      "description": "AI-powered workflows for literature screening, signal detection, combining rule-based filtering with LLM analysis for clinical data extraction."
+    },
+    "researchConsultation": {
+      "title": "Research Consultation",
+      "description": "Supporting evidence-based clinical and professional decision-making, research strategy, and evidence appraisal."
+    },
+    "training": {
+      "title": "Training & Workshops",
+      "description": "Training researchers and students in medical database searching (PubMed, Cochrane, Embase) and using AI tools for research."
+    },
+    "scientificWriting": {
+      "title": "Scientific Writing Support",
+      "description": "Assistance with writing the methods section in medical research, including search strategy description, inclusion/exclusion criteria, and review process."
+    },
+    "aiIntegration": {
+      "title": "AI Integration for Research",
+      "description": "Consulting for organizations and researchers on integrating AI tools into research workflows — from literature search to data analysis."
+    }
+  },
+  "experience": {
+    "heading": "Professional Experience",
+    "roles": {
+      "mdi": {
+        "title": "Medical Information Specialist",
+        "company": "MDI Health Technologies",
+        "period": "2022 – 2025",
+        "description": "Worked within R&D on knowledge management and AI integration, collaborating with clinical, product, and development teams."
+      },
+      "tau": {
+        "title": "Head of Training & Reference Unit",
+        "company": "Tel Aviv University, Life Sciences & Medicine Library",
+        "period": "2020 – 2022",
+        "description": "Managed a team of 4 information specialists, transitioned to Moodle platform, developed content with Articulate Storyline."
+      },
+      "bgu": {
+        "title": "Medical Librarian & Systematic Reviews Lead",
+        "company": "Ben-Gurion University, Medical Library",
+        "period": "2015 – 2020",
+        "description": "Established systematic review service, co-authored 4 peer-reviewed publications, developed training for students and staff."
+      },
+      "intel": {
+        "title": "Paramedic Team Leader",
+        "company": "Advanced Emergency Solutions (Intel FAB 28 Clinic)",
+        "period": "2012 – 2015",
+        "description": "Led a team of ~10 paramedics, set up knowledge management system in SharePoint, wrote emergency protocols."
+      }
+    }
+  },
+  "publications": {
+    "heading": "Publications",
+    "subtitle": "4 peer-reviewed articles published on PubMed as methodological contributor",
+    "pub1Title": "GH treatment in pediatric Down syndrome: a systematic review and mini meta-analysis",
+    "pub2Title": "GHRH-GH-IGF1 axis in pediatric Down syndrome: a systematic review and mini meta-analysis",
+    "pub3Title": "The association between overactive bladder and fibromyalgia: a systematic review and meta-analysis",
+    "pub4Title": "A systematic review of stem cell therapy treatment for women suffering from stress urinary incontinence",
+    "viewOnPubMed": "View on PubMed"
+  },
+  "contact": {
+    "heading": "Contact",
+    "subtitle": "Feel free to reach out for a free initial consultation",
+    "nameField": "Full Name",
+    "emailField": "Email",
+    "subjectField": "Subject",
+    "messageField": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! I'll get back to you soon.",
+    "error": "An error occurred. Please try again or contact me directly via email.",
+    "directContact": "Or reach out directly",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "location": "Israel"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "builtWith": "Built with"
+  }
+}

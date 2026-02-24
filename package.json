@@ -1,5 +1,5 @@
 {
-  "name": "personal-site-temp",
+  "name": "personal-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "lucide-react": "^0.575.0",
+    "motion": "^12.34.3",
     "next": "16.1.6",
+    "next-intl": "^4.8.3",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },

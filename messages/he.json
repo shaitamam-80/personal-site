@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": "שי תמם | יועץ מידע רפואי ומחקרי",
+    "description": "שירותי ייעוץ מידע רפואי, סקירות שיטתיות, ניהול ידע ושילוב AI למחקר — ניסיון של למעלה מ-10 שנים"
+  },
+  "nav": {
+    "about": "אודות",
+    "services": "שירותים",
+    "experience": "ניסיון",
+    "publications": "פרסומים",
+    "contact": "צור קשר"
+  },
+  "hero": {
+    "greeting": "שלום, אני",
+    "name": "שי תמם",
+    "title": "יועץ מידע רפואי ומחקרי",
+    "tagline": "מסייע לחוקרים, סטודנטים למחקר וארגונים לנווט בעולם המידע הרפואי — מסקירות שיטתיות ועד שילוב כלי AI בתהליכי מחקר",
+    "cta": "בואו נדבר"
+  },
+  "about": {
+    "heading": "אודות",
+    "paragraph1": "מומחה מידע בכיר עם למעלה מ-10 שנות ניסיון בספריות אקדמיות ובתעשיית ה-HealthTech. מתמחה בסקירות ספרות, ניהול ידע ופיתוח הדרכות, עם רקע קליני כפרמדיק מוסמך.",
+    "paragraph2": "במהלך הקריירה שלי עבדתי עם צוותי מחקר קליניים, פיתחתי מערכות מבוססות AI לסינון ספרות ואיתור סיגנלים, וסייעתי בבניית מאגרי ידע המשלבים מסדי נתונים רגולטוריים ומדעיים.",
+    "stat1Label": "שנות ניסיון",
+    "stat1Value": "10+",
+    "stat2Label": "פרסומים מדעיים",
+    "stat2Value": "4",
+    "stat3Label": "מוסדות",
+    "stat3Value": "5+"
+  },
+  "services": {
+    "heading": "שירותים",
+    "subtitle": "מגוון שירותי ייעוץ ותמיכה מקצועית לחוקרים, סטודנטים וארגונים",
+    "systematicReviews": {
+      "title": "סקירות שיטתיות וסקירות ספרות",
+      "description": "סינתזה מקיפה של עדויות, אסטרטגיות חיפוש שיטתיות, סקירות בהתאם לסטנדרט PRISMA, וסקירות Scoping."
+    },
+    "knowledgeManagement": {
+      "title": "ניהול ידע",
+      "description": "בניית מאגרי ידע, איחוד מסדי נתונים, ארכיטקטורת מידע ועבודה עם מסדי נתונים רגולטוריים (FDA, FAERS, WHO VigiAccess)."
+    },
+    "learningDevelopment": {
+      "title": "למידה ופיתוח הוראתי",
+      "description": "ניהול מערכות למידה (Moodle), פיתוח קורסים דיגיטליים (Articulate Storyline), תוכניות הדרכה וסדנאות."
+    },
+    "medicalAI": {
+      "title": "מידע רפואי ושילוב AI",
+      "description": "בניית תהליכי עבודה מבוססי AI לסינון ספרות, איתור סיגנלים, שילוב סינון מבוסס כללים עם ניתוח LLM לחילוץ נתונים קליניים."
+    },
+    "researchConsultation": {
+      "title": "ייעוץ מחקרי",
+      "description": "תמיכה בקבלת החלטות קליניות ומקצועיות מבוססות עדויות, אסטרטגיית מחקר והערכת עדויות."
+    },
+    "training": {
+      "title": "הדרכות וסדנאות",
+      "description": "הדרכות לחוקרים וסטודנטים בחיפוש במאגרי מידע רפואיים (PubMed, Cochrane, Embase) ובשימוש בכלי AI למחקר."
+    },
+    "scientificWriting": {
+      "title": "סיוע בכתיבה מדעית",
+      "description": "תמיכה בכתיבת פרק השיטות במחקרים רפואיים, כולל תיאור אסטרטגיית החיפוש, קריטריוני הכללה והדרה, ותהליך הסקירה."
+    },
+    "aiIntegration": {
+      "title": "ייעוץ שילוב AI במחקר",
+      "description": "ייעוץ לארגונים וחוקרים בשילוב כלי בינה מלאכותית בתהליכי עבודה מחקריים — מחיפוש ספרות ועד ניתוח נתונים."
+    }
+  },
+  "experience": {
+    "heading": "ניסיון מקצועי",
+    "roles": {
+      "mdi": {
+        "title": "מומחה מידע רפואי",
+        "company": "MDI Health Technologies",
+        "period": "2022 – 2025",
+        "description": "עבודה במחלקת R&D על ניהול ידע ושילוב AI, שיתוף פעולה עם צוותים קליניים, מוצריים ופיתוח."
+      },
+      "tau": {
+        "title": "ראש יחידת הדרכה והפניה",
+        "company": "אוניברסיטת תל אביב, ספריית מדעי החיים והרפואה",
+        "period": "2020 – 2022",
+        "description": "ניהול צוות של 4 מומחי מידע, מעבר לפלטפורמת Moodle, פיתוח תכנים ב-Articulate Storyline."
+      },
+      "bgu": {
+        "title": "ספרנית רפואית ומובילת סקירות שיטתיות",
+        "company": "אוניברסיטת בן-גוריון, הספרייה הרפואית",
+        "period": "2015 – 2020",
+        "description": "הקמת שירות סקירות שיטתיות, שותפות בכתיבת 4 מאמרים מדעיים, פיתוח הדרכות לסטודנטים ולסגל."
+      },
+      "intel": {
+        "title": "מפקד צוות פרמדיקים",
+        "company": "Advanced Emergency Solutions (מרפאת Intel FAB 28)",
+        "period": "2012 – 2015",
+        "description": "ניהול צוות של כ-10 פרמדיקים, הקמת מערכת ניהול ידע ב-SharePoint, כתיבת פרוטוקולי חירום."
+      }
+    }
+  },
+  "publications": {
+    "heading": "פרסומים מדעיים",
+    "subtitle": "4 מאמרים עמיתים שפורסמו ב-PubMed כתורם מתודולוגי",
+    "pub1Title": "GH treatment in pediatric Down syndrome: a systematic review and mini meta-analysis",
+    "pub2Title": "GHRH-GH-IGF1 axis in pediatric Down syndrome: a systematic review and mini meta-analysis",
+    "pub3Title": "The association between overactive bladder and fibromyalgia: a systematic review and meta-analysis",
+    "pub4Title": "A systematic review of stem cell therapy treatment for women suffering from stress urinary incontinence",
+    "viewOnPubMed": "צפה ב-PubMed"
+  },
+  "contact": {
+    "heading": "צור קשר",
+    "subtitle": "מוזמנים ליצור קשר לייעוץ ראשוני ללא עלות",
+    "nameField": "שם מלא",
+    "emailField": "דוא\"ל",
+    "subjectField": "נושא",
+    "messageField": "הודעה",
+    "send": "שלח הודעה",
+    "sending": "שולח...",
+    "success": "ההודעה נשלחה בהצלחה! אחזור אליך בהקדם.",
+    "error": "אירעה שגיאה. אנא נסה שוב או צור קשר ישירות באימייל.",
+    "directContact": "או צרו קשר ישירות",
+    "emailLabel": "דוא\"ל",
+    "phoneLabel": "טלפון",
+    "locationLabel": "מיקום",
+    "location": "ישראל"
+  },
+  "footer": {
+    "rights": "כל הזכויות שמורות",
+    "builtWith": "נבנה עם"
+  }
+}
