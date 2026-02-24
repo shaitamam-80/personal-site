@@ -26,12 +26,17 @@ export default function About() {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10">
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
               {t("paragraph2")}
             </p>
           </ScrollReveal>
-
           <ScrollReveal delay={0.3}>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-medium">
+              {t("paragraph3")}
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.4}>
             <div className="grid grid-cols-3 gap-8">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
