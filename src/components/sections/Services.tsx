@@ -1,9 +1,6 @@
 import { useTranslations } from "next-intl";
 import {
   Search,
-  Database,
-  GraduationCap,
-  Brain,
   Lightbulb,
   Presentation,
   FileText,
@@ -16,9 +13,6 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const SERVICE_KEYS = [
   { key: "systematicReviews", icon: Search },
-  { key: "knowledgeManagement", icon: Database },
-  { key: "learningDevelopment", icon: GraduationCap },
-  { key: "medicalAI", icon: Brain },
   { key: "researchConsultation", icon: Lightbulb },
   { key: "training", icon: Presentation },
   { key: "scientificWriting", icon: FileText },
@@ -35,7 +29,7 @@ export default function Services() {
           <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
         </ScrollReveal>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICE_KEYS.map(({ key, icon: Icon }, i) => (
             <ScrollReveal key={key} delay={i * 0.08}>
               <Card

@@ -35,18 +35,6 @@
       "title": "Systematic & Literature Reviews",
       "description": "Comprehensive evidence synthesis, systematic search strategies, PRISMA-compliant reviews, and scoping reviews."
     },
-    "knowledgeManagement": {
-      "title": "Knowledge Management",
-      "description": "Building knowledge repositories, database consolidation, information architecture, and work with regulatory databases (FDA, FAERS, WHO VigiAccess)."
-    },
-    "learningDevelopment": {
-      "title": "Learning & Instructional Design",
-      "description": "LMS administration (Moodle), e-learning course development (Articulate Storyline), training programs, and workshops."
-    },
-    "medicalAI": {
-      "title": "Medical Information & AI",
-      "description": "AI-powered workflows for literature screening, signal detection, combining rule-based filtering with LLM analysis for clinical data extraction."
-    },
     "researchConsultation": {
       "title": "Research Consultation",
       "description": "Supporting evidence-based clinical and professional decision-making, research strategy, and evidence appraisal."
