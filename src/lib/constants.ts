@@ -9,7 +9,6 @@ export const SITE_CONFIG = {
 export const NAV_ITEMS = [
   "about",
   "services",
-  "experience",
   "publications",
   "contact",
 ] as const;

@@ -6,7 +6,7 @@
   "nav": {
     "about": "About",
     "services": "Services",
-    "experience": "Experience",
+
     "publications": "Publications",
     "contact": "Contact"
   },
@@ -62,35 +62,6 @@
     "aiIntegration": {
       "title": "AI Integration for Research",
       "description": "Consulting for organizations and researchers on integrating AI tools into research workflows — from literature search to data analysis."
-    }
-  },
-  "experience": {
-    "heading": "Professional Experience",
-    "roles": {
-      "mdi": {
-        "title": "Medical Information Specialist",
-        "company": "MDI Health Technologies",
-        "period": "2022 – 2025",
-        "description": "Worked within R&D on knowledge management and AI integration, collaborating with clinical, product, and development teams."
-      },
-      "tau": {
-        "title": "Head of Training & Reference Unit",
-        "company": "Tel Aviv University, Life Sciences & Medicine Library",
-        "period": "2020 – 2022",
-        "description": "Managed a team of 4 information specialists, transitioned to Moodle platform, developed content with Articulate Storyline."
-      },
-      "bgu": {
-        "title": "Medical Librarian & Systematic Reviews Lead",
-        "company": "Ben-Gurion University, Medical Library",
-        "period": "2015 – 2020",
-        "description": "Established systematic review service, co-authored 4 peer-reviewed publications, developed training for students and staff."
-      },
-      "intel": {
-        "title": "Paramedic Team Leader",
-        "company": "Advanced Emergency Solutions (Intel FAB 28 Clinic)",
-        "period": "2012 – 2015",
-        "description": "Led a team of ~10 paramedics, set up knowledge management system in SharePoint, wrote emergency protocols."
-      }
     }
   },
   "publications": {
