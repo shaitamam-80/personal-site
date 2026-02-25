@@ -5,6 +5,7 @@ import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Publications from "@/components/sections/Publications";
 import Contact from "@/components/sections/Contact";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
