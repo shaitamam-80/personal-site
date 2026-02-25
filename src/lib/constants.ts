@@ -9,8 +9,24 @@ export const SITE_CONFIG = {
 export const NAV_ITEMS = [
   "about",
   "services",
+  "tools",
   "publications",
   "contact",
+] as const;
+
+export const TOOLS = [
+  {
+    key: "define",
+    href: "https://app.shaitamam.com/define",
+  },
+  {
+    key: "query",
+    href: "https://app.shaitamam.com/query",
+  },
+  {
+    key: "review",
+    href: "https://app.shaitamam.com/review",
+  },
 ] as const;
 
 export const PUBLICATIONS = [

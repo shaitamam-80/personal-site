@@ -6,7 +6,7 @@
   "nav": {
     "about": "About",
     "services": "Services",
-
+    "tools": "Tools",
     "publications": "Publications",
     "contact": "Contact"
   },
@@ -52,6 +52,27 @@
       "title": "AI Integration for Research",
       "description": "Consulting for organizations and researchers on integrating AI tools into research workflows — from literature search to data analysis."
     }
+  },
+  "tools": {
+    "heading": "Tools I Built",
+    "subtitle": "An AI platform for systematic reviews — from formulating the research question to screening abstracts",
+    "define": {
+      "title": "Define",
+      "label": "Research Question Formulation",
+      "description": "Interactive AI chat for structured research question formulation with support for 20+ frameworks (PICO, CoCoPop, SPIDER, and more)."
+    },
+    "query": {
+      "title": "Query",
+      "label": "PubMed Query Builder",
+      "description": "Convert your research question into an optimized PubMed boolean query with MeSH terms, search strategies, and advanced filters."
+    },
+    "review": {
+      "title": "Review",
+      "label": "AI Abstract Screening",
+      "description": "Upload a MEDLINE file and automatically screen abstracts using AI — with reasoning, Include/Exclude decisions, and manual override."
+    },
+    "tryIt": "Try the tool",
+    "badge": "MedAI Hub"
   },
   "publications": {
     "heading": "Publications",
