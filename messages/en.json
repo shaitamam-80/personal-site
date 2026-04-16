@@ -54,25 +54,39 @@
     }
   },
   "tools": {
-    "heading": "Tools I Built",
-    "subtitle": "An AI platform for systematic reviews — from formulating the research question to screening abstracts",
-    "define": {
-      "title": "Define",
-      "label": "Research Question Formulation",
-      "description": "Interactive AI chat for structured research question formulation with support for 20+ frameworks (PICO, CoCoPop, SPIDER, and more)."
+    "heading": "The System I Built",
+    "subtitle": "RefDesk — an AI platform for systematic reviews, from rough idea to publishable research question",
+    "productName": "RefDesk",
+    "tagline": "Turn a rough idea into a publishable research question",
+    "description": "An end-to-end system guiding researchers, students, and institutions through every stage of the systematic review — from research question formulation to journal selection.",
+    "betaBadge": "Beta — invitation only",
+    "stagesHeading": "System Stages",
+    "stages": {
+      "question": {
+        "name": "Research Question",
+        "description": "AI-guided formulation across 12 evidence frameworks (PICO, SPIDER, CoCoPop, and more) — the system selects the right framework automatically."
+      },
+      "scoping": {
+        "name": "Scoping Search",
+        "description": "Landscape analysis via OpenAlex — article volume, leading journals, and research feasibility before committing to a full review."
+      },
+      "strategy": {
+        "name": "Search Strategy",
+        "description": "Database-specific queries for PubMed, Scopus, CINAHL, and Embase with verified MeSH and Emtree terms — no AI-generated guesses."
+      },
+      "screening": {
+        "name": "Literature Screening",
+        "description": "AI-assisted title/abstract and full-text screening with PRISMA flow tracking and inclusion/exclusion criteria management."
+      },
+      "journal": {
+        "name": "Journal Selection",
+        "description": "Rank target journals by scope match, impact factor, and open access policy based on your specific research question."
+      }
     },
-    "query": {
-      "title": "Query",
-      "label": "PubMed Query Builder",
-      "description": "Convert your research question into an optimized PubMed boolean query with MeSH terms, search strategies, and advanced filters."
-    },
-    "review": {
-      "title": "Review",
-      "label": "AI Abstract Screening",
-      "description": "Upload a MEDLINE file and automatically screen abstracts using AI — with reasoning, Include/Exclude decisions, and manual override."
-    },
-    "tryIt": "Try the tool",
-    "badge": "MedAI Hub"
+    "frameworksHeading": "Supported Research Frameworks",
+    "freeTier": "Free",
+    "proTier": "Pro",
+    "cta": "Visit RefDesk"
   },
   "publications": {
     "heading": "Publications",
