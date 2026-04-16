@@ -17,15 +17,15 @@ export const NAV_ITEMS = [
 export const TOOLS = [
   {
     key: "define",
-    href: "https://app.shaitamam.com/define",
+    href: "https://refdesk.shaitamam.com/define",
   },
   {
     key: "query",
-    href: "https://app.shaitamam.com/query",
+    href: "https://refdesk.shaitamam.com/query",
   },
   {
     key: "review",
-    href: "https://app.shaitamam.com/review",
+    href: "https://refdesk.shaitamam.com/review",
   },
 ] as const;
 
