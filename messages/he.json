@@ -54,25 +54,39 @@
     }
   },
   "tools": {
-    "heading": "כלים שבניתי",
-    "subtitle": "פלטפורמת AI לסקירות שיטתיות — מניסוח שאלת המחקר ועד סינון תקצירים",
-    "define": {
-      "title": "Define",
-      "label": "ניסוח שאלת מחקר",
-      "description": "צ׳אט AI אינטראקטיבי לניסוח שאלת מחקר מובנית עם תמיכה ב-20+ מסגרות (PICO, CoCoPop, SPIDER ועוד)."
+    "heading": "המערכת שבניתי",
+    "subtitle": "RefDesk — פלטפורמת AI לסקירות שיטתיות, מרעיון ראשוני ועד שאלת מחקר שניתן לפרסם",
+    "productName": "RefDesk",
+    "tagline": "מרעיון מעורפל לשאלת מחקר שניתן לפרסם",
+    "description": "מערכת מקצה-לקצה המלווה חוקרים, סטודנטים ומוסדות בכל שלבי הסקירה השיטתית — מניסוח שאלת המחקר ועד בחירת כתב העת לפרסום.",
+    "betaBadge": "גרסת בטא — בהזמנה בלבד",
+    "stagesHeading": "שלבי המערכת",
+    "stages": {
+      "question": {
+        "name": "ניסוח שאלת מחקר",
+        "description": "ניסוח מונחה-AI ב-12 מסגרות ראיות (PICO, SPIDER, CoCoPop ועוד) — המערכת בוחרת את המסגרת המתאימה אוטומטית."
+      },
+      "scoping": {
+        "name": "סקירה מקדימה",
+        "description": "ניתוח נוף המחקר דרך OpenAlex — היקף המאמרים, כתבי עת מובילים וישימות לפני מעבר לסקירה מלאה."
+      },
+      "strategy": {
+        "name": "אסטרטגיית חיפוש",
+        "description": "שאילתות מותאמות ל-PubMed, Scopus, CINAHL ו-Embase עם מונחי MeSH ו-Emtree מאומתים."
+      },
+      "screening": {
+        "name": "סינון ספרות",
+        "description": "סינון תקצירים וטקסט מלא בסיוע AI עם תיעוד PRISMA וניהול קריטריוני הכללה/הדרה."
+      },
+      "journal": {
+        "name": "בחירת כתב עת",
+        "description": "דירוג כתבי עת לפי התאמת תחום, impact factor ומדיניות open access בהתאם לשאלת המחקר."
+      }
     },
-    "query": {
-      "title": "Query",
-      "label": "בניית שאילתות PubMed",
-      "description": "המרת שאלת המחקר לשאילתת PubMed בוליאנית מותאמת עם מונחי MeSH, אסטרטגיות חיפוש ומסננים מתקדמים."
-    },
-    "review": {
-      "title": "Review",
-      "label": "סינון תקצירים עם AI",
-      "description": "העלאת קובץ MEDLINE וסינון אוטומטי של תקצירים באמצעות AI — עם נימוקים, החלטות Include/Exclude וביקורת ידנית."
-    },
-    "tryIt": "נסו את הכלי",
-    "badge": "RefDesk"
+    "frameworksHeading": "מסגרות מחקר נתמכות",
+    "freeTier": "חינם",
+    "proTier": "Pro",
+    "cta": "היכנסו ל-RefDesk"
   },
   "publications": {
     "heading": "פרסומים מדעיים",

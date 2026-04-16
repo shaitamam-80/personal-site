@@ -14,20 +14,30 @@ export const NAV_ITEMS = [
   "contact",
 ] as const;
 
-export const TOOLS = [
-  {
-    key: "define",
-    href: "https://refdesk.shaitamam.com/",
-  },
-  {
-    key: "query",
-    href: "https://refdesk.shaitamam.com/",
-  },
-  {
-    key: "review",
-    href: "https://refdesk.shaitamam.com/",
-  },
-] as const;
+export const REFDESK = {
+  url: "https://refdesk.shaitamam.com/",
+  stages: [
+    { key: "question", tier: "free" },
+    { key: "scoping", tier: "free" },
+    { key: "strategy", tier: "pro" },
+    { key: "screening", tier: "pro" },
+    { key: "journal", tier: "pro" },
+  ],
+  frameworks: [
+    "PICO",
+    "SPIDER",
+    "CoCoPop",
+    "PCC",
+    "PFO",
+    "PIRD",
+    "PEO",
+    "PICo",
+    "BeHEMoTh",
+    "CMO",
+    "ECLIPSE",
+    "PerSPEcTiF",
+  ],
+} as const;
 
 export const PUBLICATIONS = [
   {
