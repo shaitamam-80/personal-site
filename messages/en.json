@@ -72,7 +72,7 @@
       "description": "Upload a MEDLINE file and automatically screen abstracts using AI — with reasoning, Include/Exclude decisions, and manual override."
     },
     "tryIt": "Try the tool",
-    "badge": "MedAI Hub"
+    "badge": "RefDesk"
   },
   "publications": {
     "heading": "Publications",
