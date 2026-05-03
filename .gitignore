@@ -46,4 +46,5 @@ next-env.d.ts
 /.playwright-mcp/
 /verify-*.png
 /final-*.png
+/v2-*.png
 /CLAUDE.md

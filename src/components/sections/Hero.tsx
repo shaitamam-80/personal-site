@@ -8,13 +8,13 @@ import Container from "@/components/ui/Container";
 const containerVariants: Variants = {
   hidden: {},
   show: {
-    transition: { staggerChildren: 0.08, delayChildren: 0.05 },
+    transition: { staggerChildren: 0.1, delayChildren: 0.05 },
   },
 };
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 export default function Hero() {
@@ -22,46 +22,86 @@ export default function Hero() {
   const tA11y = useTranslations("a11y");
 
   return (
-    <section className="relative min-h-[90svh] flex items-center overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/4 start-1/4 h-72 w-72 rounded-full bg-primary-100 opacity-40 blur-3xl dark:bg-primary-900/30" />
-        <div className="absolute bottom-1/4 end-1/4 h-96 w-96 rounded-full bg-accent-100 opacity-30 blur-3xl dark:bg-accent-900/20" />
+    <section className="relative min-h-[92svh] flex items-center overflow-hidden bg-surface">
+      {/* Subtle background — paper texture rather than blob gradient */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-bone-50 via-bone-100 to-bone-200/40 dark:from-ink-700 dark:via-ink-700 dark:to-ink-900" />
       </div>
 
-      <Container className="py-20">
+      <Container className="py-20 lg:py-24">
         <motion.div
           initial="hidden"
           animate="show"
           variants={containerVariants}
-          className="max-w-3xl mx-auto text-center"
+          className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center"
         >
-          <motion.h1
-            variants={itemVariants}
-            className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white mb-4"
-          >
-            {t("name")}
-          </motion.h1>
-          <motion.p
-            variants={itemVariants}
-            className="text-xl sm:text-2xl text-primary-600 dark:text-primary-400 font-medium mb-6"
-          >
-            {t("title")}
-          </motion.p>
-          <motion.p
-            variants={itemVariants}
-            className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
-          >
-            {t("tagline")}
-          </motion.p>
-          <motion.div variants={itemVariants}>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-3.5 text-base font-medium text-white shadow-sm transition-all hover:bg-primary-700 hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-primary-500 dark:hover:bg-primary-600 dark:focus-visible:ring-offset-gray-950"
+          {/* Left column — name + tagline */}
+          <div className="lg:col-span-7">
+            <motion.div variants={itemVariants} className="flex items-center gap-4 mb-6">
+              <span className="eyebrow">{t("eyebrow")}</span>
+              <span aria-hidden="true" className="h-px w-12 bg-primary-500/60" />
+            </motion.div>
+
+            <motion.h1
+              variants={itemVariants}
+              className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-ink-700 dark:text-bone-50 leading-[0.95] mb-8"
             >
-              {t("cta")}
-            </a>
-          </motion.div>
+              {t("name")}
+            </motion.h1>
+
+            <motion.div variants={itemVariants} className="max-w-xl">
+              <p className="font-heading text-xl sm:text-2xl italic text-primary-600 dark:text-primary-400 mb-6 leading-snug">
+                {t("title")}
+              </p>
+              <div aria-hidden="true" className="editorial-rule mb-6" />
+              <p className="text-base sm:text-lg text-text-muted leading-relaxed mb-10">
+                {t("tagline")}
+              </p>
+              <a
+                href="#contact"
+                className="group inline-flex items-center gap-3 text-base font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-4 focus-visible:ring-offset-bone-100 dark:focus-visible:ring-offset-ink-700 rounded-sm"
+              >
+                <span className="border-b border-primary-600/40 group-hover:border-primary-600 pb-0.5 transition-colors">
+                  {t("cta")}
+                </span>
+                <span aria-hidden="true" className="rtl:rotate-180 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1">
+                  →
+                </span>
+              </a>
+            </motion.div>
+          </div>
+
+          {/* Right column — credentials sidebar (editorial frontispiece) */}
+          <motion.aside
+            variants={itemVariants}
+            className="lg:col-span-5 lg:ps-8 lg:border-s lg:border-border-rule"
+          >
+            <div className="space-y-6">
+              <div>
+                <div className="eyebrow mb-2">{t("credentialsLabel")}</div>
+                <ul className="space-y-3 text-sm sm:text-base text-text-primary">
+                  <li className="flex gap-3">
+                    <span aria-hidden="true" className="font-heading text-primary-500 shrink-0 w-6">I.</span>
+                    <span>{t("credential1")}</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span aria-hidden="true" className="font-heading text-primary-500 shrink-0 w-6">II.</span>
+                    <span>{t("credential2")}</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span aria-hidden="true" className="font-heading text-primary-500 shrink-0 w-6">III.</span>
+                    <span>{t("credential3")}</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="editorial-rule" />
+
+              <div className="text-xs uppercase tracking-widest text-text-subtle">
+                {t("established")}
+              </div>
+            </div>
+          </motion.aside>
         </motion.div>
 
         {/* Scroll indicator */}
@@ -70,16 +110,16 @@ export default function Hero() {
           aria-label={tA11y("scrollToAbout")}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
+          transition={{ delay: 1.2, duration: 0.5 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 rounded-full p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
         >
           <motion.span
             aria-hidden="true"
             className="block"
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
+            animate={{ y: [0, 6, 0] }}
+            transition={{ repeat: Infinity, duration: 2.4 }}
           >
-            <ArrowDown className="h-5 w-5 text-gray-500 dark:text-gray-400" />
+            <ArrowDown className="h-5 w-5 text-text-subtle" />
           </motion.span>
         </motion.a>
       </Container>

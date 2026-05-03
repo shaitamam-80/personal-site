@@ -89,7 +89,12 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900/50">
       <Container>
         <ScrollReveal>
-          <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
+          <SectionHeading
+            eyebrow={t("eyebrow")}
+            title={t("heading")}
+            subtitle={t("subtitle")}
+            fleuron
+          />
         </ScrollReveal>
 
         <div className="max-w-4xl mx-auto grid gap-10 lg:grid-cols-5">

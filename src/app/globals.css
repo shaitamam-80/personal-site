@@ -3,45 +3,72 @@
 @variant dark (&:where(.dark, .dark *));
 
 /*
- * Semantic color tokens.
- * Use via Tailwind utilities (text-text-primary, bg-surface, etc.) so light/dark
- * switching and future palette changes happen in one place. The block under
- * html.dark below overrides them in dark mode.
+ * Academic Journal palette.
+ * - Surfaces: warm bone (#FBF8F3) — replaces sterile white.
+ * - Primary text: deep navy ink (#1A2C3D) — replaces pure black/gray for that
+ *   typeset feel.
+ * - Accent (a.k.a. "primary" utility for backwards compatibility): seal red
+ *   (#B23A48) — single decisive accent across the whole site, evokes medical
+ *   wax-seal authority. Used sparingly: links, primary CTA, monogram, marks.
+ * - Secondary accent: deep sage (#3D6B5E) — quiet support color for tags,
+ *   subtle highlights.
+ *
+ * Semantic tokens below also expose ink/bone directly so editorial components
+ * can opt into the journal palette without going through the primary scale.
  */
 :root {
-  --color-text-primary: var(--color-gray-900);
-  --color-text-muted: var(--color-gray-600);
-  --color-text-subtle: var(--color-gray-500);
-  --color-surface: #ffffff;
-  --color-surface-raised: var(--color-gray-50);
-  --color-border-subtle: var(--color-gray-200);
+  --color-text-primary: #1A2C3D;
+  --color-text-muted: #4D6478;
+  --color-text-subtle: #7A8B9A;
+  --color-surface: #FBF8F3;
+  --color-surface-raised: #F4EFE5;
+  --color-surface-elevated: #FDFBF7;
+  --color-border-subtle: #E8DECF;
+  --color-border-rule: #D9CFBC;
 }
 
 html.dark {
-  --color-text-primary: var(--color-gray-100);
-  --color-text-muted: var(--color-gray-400);
-  --color-text-subtle: var(--color-gray-500);
-  --color-surface: var(--color-gray-900);
-  --color-surface-raised: var(--color-gray-800);
-  --color-border-subtle: var(--color-gray-700);
+  --color-text-primary: #FBF8F3;
+  --color-text-muted: #B8C2CC;
+  --color-text-subtle: #8A95A0;
+  --color-surface: #1A2C3D;
+  --color-surface-raised: #243648;
+  --color-surface-elevated: #2C4256;
+  --color-border-subtle: #2E445A;
+  --color-border-rule: #3D5470;
 }
 
 @theme inline {
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
+  /* Seal red — re-uses the primary-* utility namespace so existing classes
+     across the codebase (text-primary-600, bg-primary-500, ...) automatically
+     pick up the new palette. */
+  --color-primary-50:  #FDF2F2;
+  --color-primary-100: #FCE3E5;
+  --color-primary-200: #F5C2C8;
+  --color-primary-300: #EA9AA4;
+  --color-primary-400: #D86F7E;
+  --color-primary-500: #B23A48;
+  --color-primary-600: #93303D;
+  --color-primary-700: #7B2935;
+  --color-primary-800: #5F202A;
+  --color-primary-900: #4A1922;
+  --color-primary-950: #2D0F15;
 
-  --color-accent-400: #38bdf8;
-  --color-accent-500: #0ea5e9;
-  --color-accent-600: #0284c7;
+  /* Deep sage as the secondary accent. */
+  --color-accent-400: #6B8E83;
+  --color-accent-500: #3D6B5E;
+  --color-accent-600: #2E544A;
+
+  /* Editorial-direct tokens (use as bg-bone-100, text-ink-700, etc.). */
+  --color-bone-50:  #FDFBF7;
+  --color-bone-100: #FBF8F3;
+  --color-bone-200: #F4EFE5;
+  --color-bone-300: #E8DECF;
+  --color-bone-400: #D9CFBC;
+
+  --color-ink-500: #4D6478;
+  --color-ink-700: #1A2C3D;
+  --color-ink-900: #0F1B27;
 
   --font-sans: var(--font-body);
   --font-heading: var(--font-display);
@@ -51,7 +78,9 @@ html.dark {
   --color-text-subtle: var(--color-text-subtle);
   --color-surface: var(--color-surface);
   --color-surface-raised: var(--color-surface-raised);
+  --color-surface-elevated: var(--color-surface-elevated);
   --color-border-subtle: var(--color-border-subtle);
+  --color-border-rule: var(--color-border-rule);
 }
 
 html {
@@ -64,6 +93,8 @@ section[id] {
 
 body {
   font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
 }
 
 .sr-only {
@@ -102,6 +133,48 @@ body {
   outline: 2px solid var(--color-primary-500);
   outline-offset: 2px;
   border-radius: 4px;
+}
+
+/* Editorial primitives — used by section components. */
+.editorial-rule {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-border-rule) 20%,
+    var(--color-border-rule) 80%,
+    transparent
+  );
+}
+
+.editorial-fleuron {
+  display: block;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-primary-500);
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-primary-600);
+}
+
+.dropcap::first-letter {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 0.85;
+  float: inline-start;
+  padding-inline-end: 0.5rem;
+  padding-block-start: 0.25rem;
+  color: var(--color-primary-600);
 }
 
 @media (prefers-reduced-motion: reduce) {

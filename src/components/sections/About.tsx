@@ -1,90 +1,107 @@
 import { useTranslations } from "next-intl";
-import { BookOpen, Users, Award } from "lucide-react";
 import Container from "@/components/ui/Container";
-import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function About() {
   const t = useTranslations("about");
   const tA11y = useTranslations("a11y");
 
-  const stats = [
-    { value: t("stat1Value"), label: t("stat1Label"), Icon: Award },
-    { value: t("stat2Value"), label: t("stat2Label"), Icon: BookOpen },
-    { value: t("stat3Value"), label: t("stat3Label"), Icon: Users },
+  const marginalia = [
+    { value: t("stat2Value"), label: t("stat2Label") },
+    { value: t("stat1Value"), label: t("stat1Label") },
+    { value: t("stat3Value"), label: t("stat3Label") },
   ];
 
   return (
-    <section id="about" className="py-24 lg:py-28 bg-gray-50 dark:bg-gray-900/50">
+    <section
+      id="about"
+      className="py-24 lg:py-32 bg-surface-elevated dark:bg-surface-raised"
+    >
       <Container>
         <ScrollReveal>
-          <SectionHeading title={t("heading")} />
+          <div className="text-center mb-16">
+            <span className="eyebrow">{t("eyebrow")}</span>
+            <h2 className="font-heading text-4xl sm:text-5xl font-bold tracking-tight text-ink-700 dark:text-bone-50 mt-3">
+              {t("heading")}
+            </h2>
+            <div aria-hidden="true" className="editorial-fleuron mt-6">
+              ❖
+            </div>
+          </div>
         </ScrollReveal>
 
-        <div className="grid gap-10 lg:grid-cols-5 lg:gap-14 items-start">
-          {/* Monogram column */}
-          <ScrollReveal delay={0.1} className="lg:col-span-2">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 max-w-6xl mx-auto">
+          {/* Main column — body copy */}
+          <ScrollReveal delay={0.1} className="lg:col-span-8 lg:order-1">
+            <p className="dropcap text-lg sm:text-xl text-text-primary leading-relaxed mb-6">
+              {t("paragraph1")}
+            </p>
+            <p className="text-lg text-text-muted leading-relaxed mb-10">
+              {t("paragraph2")}
+            </p>
+
+            {/* Pull-quote */}
             <figure
-              className="relative mx-auto max-w-sm lg:max-w-none"
-              role="img"
-              aria-label={tA11y("monogramAlt")}
+              className="my-10 border-s-4 border-primary-500 ps-6 py-2"
+              role="figure"
+              aria-label={tA11y("pullQuoteAlt")}
             >
-              <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-gradient-to-br from-primary-100 via-primary-50 to-accent-100 ring-1 ring-primary-200/60 shadow-sm dark:from-primary-900/40 dark:via-primary-950/30 dark:to-accent-900/30 dark:ring-primary-700/40">
-                <div className="flex h-full w-full flex-col items-center justify-center p-6 text-center">
+              <blockquote className="font-heading text-2xl sm:text-3xl italic leading-snug text-ink-700 dark:text-bone-100">
+                <span aria-hidden="true" className="text-primary-500/70 me-1">&ldquo;</span>
+                {t("paragraph3")}
+                <span aria-hidden="true" className="text-primary-500/70 ms-1">&rdquo;</span>
+              </blockquote>
+            </figure>
+          </ScrollReveal>
+
+          {/* Marginalia column — credentials as side notes */}
+          <ScrollReveal delay={0.2} className="lg:col-span-4 lg:order-2">
+            <aside className="lg:sticky lg:top-24 space-y-6">
+              {/* Monogram seal */}
+              <figure
+                className="relative mx-auto lg:mx-0 max-w-[180px]"
+                role="img"
+                aria-label={tA11y("monogramAlt")}
+              >
+                <div className="aspect-square flex flex-col items-center justify-center rounded-full border-2 border-primary-500/30 bg-bone-50 dark:bg-ink-700 p-4 ring-1 ring-primary-500/10">
                   <div
                     aria-hidden="true"
-                    className="font-heading text-[10rem] sm:text-[12rem] lg:text-[14rem] font-bold leading-none text-primary-700 dark:text-primary-300"
+                    className="font-heading text-6xl font-bold leading-none text-primary-600 dark:text-primary-400"
                   >
                     ST
                   </div>
                   <div
                     aria-hidden="true"
-                    className="mt-4 h-px w-12 bg-primary-400/60 dark:bg-primary-500/60"
+                    className="mt-1 h-px w-8 bg-primary-500/40"
                   />
-                  <figcaption className="mt-3 text-xs sm:text-sm font-medium uppercase tracking-wider text-primary-700 dark:text-primary-300">
-                    Shai Tamam
-                  </figcaption>
-                  <div className="mt-2 max-w-[20ch] text-xs text-gray-600 dark:text-gray-400 leading-snug">
-                    {t("monogramTagline")}
+                  <div className="mt-1 text-[10px] uppercase tracking-widest text-text-subtle">
+                    EST 2014
                   </div>
                 </div>
-              </div>
-              {/* Decorative offset accent */}
-              <div
-                aria-hidden="true"
-                className="absolute -bottom-4 -end-4 -z-10 h-24 w-24 rounded-2xl bg-primary-200/70 dark:bg-primary-900/40"
-              />
-            </figure>
-          </ScrollReveal>
+              </figure>
 
-          {/* Copy column */}
-          <ScrollReveal delay={0.15} className="lg:col-span-3">
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              {t("paragraph1")}
-            </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              {t("paragraph2")}
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-10 font-medium">
-              {t("paragraph3")}
-            </p>
+              <div aria-hidden="true" className="editorial-rule" />
 
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 border-t border-gray-200 dark:border-gray-700 pt-8">
-              {stats.map(({ value, label, Icon }) => (
-                <div key={label} className="text-center">
-                  <Icon
-                    aria-hidden="true"
-                    className="mx-auto mb-2 h-5 w-5 text-primary-600 dark:text-primary-400"
-                  />
-                  <div className="font-heading text-3xl sm:text-4xl font-bold text-primary-600 dark:text-primary-400">
-                    {value}
+              {/* Marginalia stats */}
+              <dl className="space-y-4">
+                {marginalia.map((item) => (
+                  <div key={item.label} className="flex items-baseline gap-3">
+                    <dt className="font-heading text-3xl font-bold text-primary-600 dark:text-primary-400 leading-none w-14 text-end shrink-0">
+                      {item.value}
+                    </dt>
+                    <dd className="text-sm text-text-muted leading-snug">
+                      {item.label}
+                    </dd>
                   </div>
-                  <div className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                    {label}
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </dl>
+
+              <div aria-hidden="true" className="editorial-rule" />
+
+              <p className="text-xs text-text-subtle italic leading-relaxed">
+                {t("monogramTagline")}
+              </p>
+            </aside>
           </ScrollReveal>
         </div>
       </Container>

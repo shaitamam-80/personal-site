@@ -27,7 +27,12 @@ export default function Services() {
     <section id="services" className="py-20">
       <Container>
         <ScrollReveal>
-          <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
+          <SectionHeading
+            eyebrow={t("eyebrow")}
+            title={t("heading")}
+            subtitle={t("subtitle")}
+            fleuron
+          />
         </ScrollReveal>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
