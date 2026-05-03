@@ -23,9 +23,10 @@ const STAGE_ICONS = {
 
 export default function Tools() {
   const t = useTranslations("tools");
+  const tA11y = useTranslations("a11y");
 
   return (
-    <section id="tools" className="py-20 bg-gray-50 dark:bg-gray-900/50">
+    <section id="tools" className="py-24 lg:py-28 bg-gray-50 dark:bg-gray-900/50">
       <Container>
         <ScrollReveal>
           <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
@@ -33,16 +34,19 @@ export default function Tools() {
 
         <ScrollReveal delay={0.1}>
           <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
-            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-400" />
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-400"
+            />
 
             <div className="p-8 sm:p-10 lg:p-12">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400">
-                    <Sparkles className="h-6 w-6" />
+                    <Sparkles className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                    <div className="font-heading text-2xl font-bold text-gray-900 dark:text-white">
                       {t("productName")}
                     </div>
                   </div>
@@ -52,10 +56,10 @@ export default function Tools() {
                 </span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
                 {t("tagline")}
               </h3>
-              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl">
+              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
                 {t("description")}
               </p>
 
@@ -75,15 +79,18 @@ export default function Tools() {
                       >
                         <div className="relative flex-shrink-0">
                           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white text-primary-600 shadow-sm dark:bg-gray-800 dark:text-primary-400">
-                            <Icon className="h-5 w-5" />
+                            <Icon className="h-5 w-5" aria-hidden="true" />
                           </div>
-                          <span className="absolute -top-1.5 -start-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-primary-600 text-[10px] font-bold text-white">
+                          <span
+                            aria-hidden="true"
+                            className="absolute -top-1.5 -start-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-primary-600 text-[10px] font-bold text-white"
+                          >
                             {i + 1}
                           </span>
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 mb-1 flex-wrap">
-                            <h5 className="font-semibold text-gray-900 dark:text-white">
+                            <h5 className="font-heading font-semibold text-gray-900 dark:text-white">
                               {t(`stages.${key}.name`)}
                             </h5>
                             <span
@@ -127,10 +134,11 @@ export default function Tools() {
                   href={REFDESK.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition-all hover:bg-primary-700 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                  aria-label={`${t("cta")} (${tA11y("openInNewTab")})`}
+                  className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition-all hover:bg-primary-700 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-50 dark:focus-visible:ring-offset-gray-900"
                 >
                   {t("cta")}
-                  <ExternalLink className="h-4 w-4" />
+                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
                 </a>
               </div>
             </div>

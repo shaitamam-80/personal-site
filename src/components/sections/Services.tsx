@@ -10,14 +10,15 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { SERVICES, type ServiceKey } from "@/lib/constants";
 
-const SERVICE_KEYS = [
-  { key: "systematicReviews", icon: Search },
-  { key: "researchConsultation", icon: Lightbulb },
-  { key: "training", icon: Presentation },
-  { key: "scientificWriting", icon: FileText },
-  { key: "aiIntegration", icon: Sparkles },
-] as const;
+const SERVICE_ICONS: Record<ServiceKey, typeof Search> = {
+  systematicReviews: Search,
+  researchConsultation: Lightbulb,
+  training: Presentation,
+  scientificWriting: FileText,
+  aiIntegration: Sparkles,
+};
 
 export default function Services() {
   const t = useTranslations("services");
@@ -30,15 +31,21 @@ export default function Services() {
         </ScrollReveal>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICE_KEYS.map(({ key, icon: Icon }, i) => (
-            <ScrollReveal key={key} delay={i * 0.08}>
-              <Card
-                icon={<Icon className="h-6 w-6" />}
-                title={t(`${key}.title`)}
-                description={t(`${key}.description`)}
-              />
-            </ScrollReveal>
-          ))}
+          {SERVICES.map(({ key, primary }, i) => {
+            const Icon = SERVICE_ICONS[key];
+            return (
+              <ScrollReveal key={key} delay={i * 0.08}>
+                <Card
+                  icon={<Icon className="h-6 w-6" aria-hidden="true" />}
+                  title={t(`${key}.title`)}
+                  description={t(`${key}.description`)}
+                  cta={t("contactCta")}
+                  href="#contact"
+                  primary={primary}
+                />
+              </ScrollReveal>
+            );
+          })}
         </div>
       </Container>
     </section>

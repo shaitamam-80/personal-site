@@ -39,10 +39,53 @@ export const REFDESK = {
   ],
 } as const;
 
-export const PUBLICATIONS = [
+export type ServiceKey =
+  | "systematicReviews"
+  | "researchConsultation"
+  | "training"
+  | "scientificWriting"
+  | "aiIntegration";
+
+export interface ServiceMeta {
+  key: ServiceKey;
+  primary?: boolean;
+}
+
+export const SERVICES: readonly ServiceMeta[] = [
+  { key: "systematicReviews", primary: true },
+  { key: "researchConsultation" },
+  { key: "training" },
+  { key: "scientificWriting" },
+  { key: "aiIntegration" },
+] as const;
+
+export interface AuthorEntry {
+  name: string;
+  highlight?: boolean;
+}
+
+export interface Publication {
+  authors: readonly AuthorEntry[];
+  titleKey: string;
+  journal: string;
+  year: number;
+  volume: string;
+  pages: string;
+  doi: string;
+  pmid: string;
+}
+
+export const PUBLICATIONS: readonly Publication[] = [
   {
-    authors:
-      "Shaki D, Hershkovitz E, Tamam S, Bollotin A, David O, Yalovitsky G, et al.",
+    authors: [
+      { name: "Shaki D" },
+      { name: "Hershkovitz E" },
+      { name: "Tamam S", highlight: true },
+      { name: "Bollotin A" },
+      { name: "David O" },
+      { name: "Yalovitsky G" },
+      { name: "et al." },
+    ],
     titleKey: "pub1Title",
     journal: "Front Endocrinol (Lausanne)",
     year: 2023,
@@ -52,8 +95,15 @@ export const PUBLICATIONS = [
     pmid: "37334282",
   },
   {
-    authors:
-      "Shaki D, Hershkovitz E, Tamam S, Bollotin A, David O, Yalovitsky G, et al.",
+    authors: [
+      { name: "Shaki D" },
+      { name: "Hershkovitz E" },
+      { name: "Tamam S", highlight: true },
+      { name: "Bollotin A" },
+      { name: "David O" },
+      { name: "Yalovitsky G" },
+      { name: "et al." },
+    ],
     titleKey: "pub2Title",
     journal: "Front Pediatr",
     year: 2023,
@@ -63,7 +113,11 @@ export const PUBLICATIONS = [
     pmid: "37334225",
   },
   {
-    authors: "Goldberg N, Tamam S, Weintraub AY.",
+    authors: [
+      { name: "Goldberg N" },
+      { name: "Tamam S", highlight: true },
+      { name: "Weintraub AY" },
+    ],
     titleKey: "pub3Title",
     journal: "Int J Gynaecol Obstet",
     year: 2022,
@@ -73,7 +127,12 @@ export const PUBLICATIONS = [
     pmid: "35580907",
   },
   {
-    authors: "Klapper-Goldstein H, Tamam S, Sade S, Weintraub AY.",
+    authors: [
+      { name: "Klapper-Goldstein H" },
+      { name: "Tamam S", highlight: true },
+      { name: "Sade S" },
+      { name: "Weintraub AY" },
+    ],
     titleKey: "pub4Title",
     journal: "Int J Gynaecol Obstet",
     year: 2022,
