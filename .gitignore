@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local-only workspace assets (skill bundles, agent backups, browser screenshots)
+/.claude/
+/ui-ux-skill-tmp/
+/.playwright-mcp/
+/verify-*.png
+/final-*.png
+/CLAUDE.md

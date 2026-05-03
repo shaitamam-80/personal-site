@@ -3,6 +3,12 @@
     "title": "Shai Tamam | Medical Information & Research Consultant",
     "description": "Medical information consulting, systematic reviews, knowledge management, and AI integration for research — over 10 years of experience"
   },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "openInNewTab": "opens in a new tab",
+    "scrollToAbout": "Scroll to About section",
+    "monogramAlt": "ST — Shai Tamam monogram"
+  },
   "nav": {
     "about": "About",
     "services": "Services",
@@ -23,10 +29,11 @@
     "paragraph3": "4 peer-reviewed articles on PubMed as a methodological contributor, AI-powered literature screening systems, and hundreds of hours of training delivered — my experience is your advantage.",
     "stat1Label": "Years Experience",
     "stat1Value": "10+",
-    "stat2Label": "Publications",
+    "stat2Label": "Published Research",
     "stat2Value": "4",
-    "stat3Label": "Institutions",
-    "stat3Value": "5+"
+    "stat3Label": "Institutions Served",
+    "stat3Value": "5+",
+    "monogramTagline": "Methodological contributor on 4 PubMed papers"
   },
   "services": {
     "heading": "Services",
@@ -50,7 +57,8 @@
     "aiIntegration": {
       "title": "AI Integration for Research",
       "description": "Consulting for organizations and researchers on integrating AI tools into research workflows — from literature search to data analysis."
-    }
+    },
+    "contactCta": "Get in touch"
   },
   "tools": {
     "heading": "The System I Built",
@@ -106,7 +114,14 @@
     "send": "Send Message",
     "sending": "Sending...",
     "success": "Message sent successfully! I'll get back to you soon.",
+    "successDetail": "Your message has been received. I typically respond within 1–2 business days.",
     "error": "An error occurred. Please try again or contact me directly via email.",
+    "errors": {
+      "nameRequired": "Please enter your full name (at least 2 characters).",
+      "emailInvalid": "Please enter a valid email address.",
+      "messageTooShort": "Please write a message of at least 10 characters.",
+      "submitFailed": "Could not send your message. Please check your connection and try again, or contact me directly via email."
+    },
     "directContact": "Or reach out directly",
     "emailLabel": "Email",
     "phoneLabel": "Phone",

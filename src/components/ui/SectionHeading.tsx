@@ -7,7 +7,7 @@ export default function SectionHeading({
 }) {
   return (
     <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+      <h2 className="font-heading text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
         {title}
       </h2>
       {subtitle && (

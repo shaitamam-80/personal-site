@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local-only assets not part of the app:
+    "ui-ux-skill-tmp/**",
+    ".claude/**",
   ]),
 ]);
 

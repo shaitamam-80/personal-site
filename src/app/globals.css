@@ -2,6 +2,30 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+/*
+ * Semantic color tokens.
+ * Use via Tailwind utilities (text-text-primary, bg-surface, etc.) so light/dark
+ * switching and future palette changes happen in one place. The block under
+ * html.dark below overrides them in dark mode.
+ */
+:root {
+  --color-text-primary: var(--color-gray-900);
+  --color-text-muted: var(--color-gray-600);
+  --color-text-subtle: var(--color-gray-500);
+  --color-surface: #ffffff;
+  --color-surface-raised: var(--color-gray-50);
+  --color-border-subtle: var(--color-gray-200);
+}
+
+html.dark {
+  --color-text-primary: var(--color-gray-100);
+  --color-text-muted: var(--color-gray-400);
+  --color-text-subtle: var(--color-gray-500);
+  --color-surface: var(--color-gray-900);
+  --color-surface-raised: var(--color-gray-800);
+  --color-border-subtle: var(--color-gray-700);
+}
+
 @theme inline {
   --color-primary-50: #eff6ff;
   --color-primary-100: #dbeafe;
@@ -21,6 +45,13 @@
 
   --font-sans: var(--font-body);
   --font-heading: var(--font-display);
+
+  --color-text-primary: var(--color-text-primary);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-subtle: var(--color-text-subtle);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-border-subtle: var(--color-border-subtle);
 }
 
 html {
@@ -32,5 +63,54 @@ section[id] {
 }
 
 body {
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-body);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  inset-inline-start: 0.5rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  background: var(--color-primary-600);
+  color: white;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: transform 150ms ease-out;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
