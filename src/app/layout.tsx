@@ -68,7 +68,7 @@ export default async function RootLayout({
         </Script>
         <style>{`:root{--font-display:var(--font-frank);--font-body:${bodyStack}}`}</style>
       </head>
-      <body className="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased">
+      <body className="antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <a href="#main" className="skip-link">
             {tA11y("skipToContent")}

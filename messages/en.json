@@ -7,7 +7,8 @@
     "skipToContent": "Skip to main content",
     "openInNewTab": "opens in a new tab",
     "scrollToAbout": "Scroll to About section",
-    "monogramAlt": "ST — Shai Tamam monogram"
+    "monogramAlt": "ST — Shai Tamam monogram",
+    "pullQuoteAlt": "Pull quote from the practice statement"
   },
   "nav": {
     "about": "About",
@@ -17,13 +18,20 @@
     "contact": "Contact"
   },
   "hero": {
+    "eyebrow": "Medical Information Practice",
     "name": "Shai Tamam",
     "title": "Medical Information & Research Consultant",
     "tagline": "Helping researchers, graduate students, and organizations navigate the world of medical information — from systematic reviews to AI-powered research workflows",
-    "cta": "Let's Talk"
+    "cta": "Start a conversation",
+    "credentialsLabel": "Credentials",
+    "credential1": "10+ years in academic medical libraries & HealthTech",
+    "credential2": "4 peer-reviewed PubMed publications",
+    "credential3": "Clinical background as a paramedic",
+    "established": "Practice est. 2014 · Israel"
   },
   "about": {
-    "heading": "About",
+    "eyebrow": "Section I",
+    "heading": "About the Practice",
     "paragraph1": "I help researchers, students, and health organizations find the right evidence and put it to work — from systematic reviews to integrating AI tools into research workflows.",
     "paragraph2": "With over a decade of experience in academic medical libraries and the HealthTech industry, and a clinical background as a paramedic, I bring a unique perspective that combines clinical understanding with medical information expertise.",
     "paragraph3": "4 peer-reviewed articles on PubMed as a methodological contributor, AI-powered literature screening systems, and hundreds of hours of training delivered — my experience is your advantage.",
@@ -36,6 +44,7 @@
     "monogramTagline": "Methodological contributor on 4 PubMed papers"
   },
   "services": {
+    "eyebrow": "Section II",
     "heading": "Services",
     "subtitle": "Professional consulting and support for researchers, students, and organizations",
     "systematicReviews": {
@@ -61,6 +70,7 @@
     "contactCta": "Get in touch"
   },
   "tools": {
+    "eyebrow": "Section III",
     "heading": "The System I Built",
     "subtitle": "RefDesk — an AI platform for systematic reviews, from rough idea to publishable research question",
     "productName": "RefDesk",
@@ -95,7 +105,22 @@
     "proTier": "Pro",
     "cta": "Visit RefDesk"
   },
+  "picoDemo": {
+    "heading": "Try it: research-question framework picker",
+    "subtitle": "Pick a topic — RefDesk classifies it into the right framework in real time.",
+    "pickLabel": "Sample topics from real systematic reviews",
+    "emptyState": "← Pick a topic to see how RefDesk decomposes it.",
+    "disclaimer": "Demo output. Live RefDesk handles 12 frameworks.",
+    "ctaInRefDesk": "Run this in RefDesk",
+    "example1Topic": "GH treatment in pediatric Down syndrome",
+    "example1Rationale": "Comparing an intervention against a control in a defined population — the canonical PICO setup.",
+    "example2Topic": "Stem cell therapy for stress incontinence",
+    "example2Rationale": "Treatment vs. standard care in women with a defined condition — PICO again, with a quality-of-life outcome.",
+    "example3Topic": "Overactive bladder & fibromyalgia association",
+    "example3Rationale": "No intervention here — we're studying an exposure–outcome association, so PEO is the right frame, not PICO."
+  },
   "publications": {
+    "eyebrow": "Section IV",
     "heading": "Publications",
     "subtitle": "4 peer-reviewed articles published on PubMed as methodological contributor",
     "pub1Title": "GH treatment in pediatric Down syndrome: a systematic review and mini meta-analysis",
@@ -105,7 +130,8 @@
     "viewOnPubMed": "View on PubMed"
   },
   "contact": {
-    "heading": "Contact",
+    "eyebrow": "Section V",
+    "heading": "Correspondence",
     "subtitle": "Feel free to reach out for a free initial consultation",
     "nameField": "Full Name",
     "emailField": "Email",

@@ -11,6 +11,7 @@ import {
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import PicoDemo from "@/components/ui/PicoDemo";
 import { REFDESK } from "@/lib/constants";
 
 const STAGE_ICONS = {
@@ -29,7 +30,12 @@ export default function Tools() {
     <section id="tools" className="py-24 lg:py-28 bg-gray-50 dark:bg-gray-900/50">
       <Container>
         <ScrollReveal>
-          <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
+          <SectionHeading
+            eyebrow={t("eyebrow")}
+            title={t("heading")}
+            subtitle={t("subtitle")}
+            fleuron
+          />
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
@@ -64,6 +70,11 @@ export default function Tools() {
               </p>
 
               <div className="my-10 h-px bg-gray-200 dark:bg-gray-700" />
+
+              {/* Interactive PICO demo — proof, not pitch */}
+              <div className="mb-10">
+                <PicoDemo />
+              </div>
 
               <div className="mb-10">
                 <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-5">
